@@ -1,2 +1,3 @@
 # VOROpecom
-Android application with login, calcualtion, history chart, etc
+Android application uses navigation view with login, calcualtion, history chart, etc.
+RestFul webservice+json+asynctask to deal with data and dynamic view. 
