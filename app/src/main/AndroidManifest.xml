@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ad_imagine.voropecom" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconevor"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Coach"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_coach"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".fragment_coach.twoNote"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".fragment_coach.coache_historique"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Utilisateur"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_utilisateur"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".utilisateur.Note"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".chefteam.VorTeam" >
+        </activity>
+        <activity android:name=".chefteam.VorTeam_item" >
+        </activity>
+        <activity android:name=".chefteam.VorTeam_adapter" >
+        </activity>
+        <activity android:name=".chefteam.Team_historique" >
+        </activity>
+        <activity android:name=".chefteam.FicheTeam" >
+        </activity>
+        <activity android:name=".chefteam.GestionTeam" >
+        </activity>
+        <activity android:name=".chefteam.Chefteams" >
+        </activity>
+        <activity android:name=".chefteam.VorTeam_activity" >
+        </activity>
+        <activity android:name=".utilisateur.note_fragment" >
+        </activity>
+    </application>
+
+</manifest>

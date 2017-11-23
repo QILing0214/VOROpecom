@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_accueil"
+            android:title="Accueil" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_coache"
+            android:title="Mes coaché" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_requetage"
+            android:title="Requêtage " />
+
+    </group>
+
+</menu>

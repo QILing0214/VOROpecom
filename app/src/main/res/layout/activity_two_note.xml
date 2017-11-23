@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/wallpaper01">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:text="3"
+            android:id="@+id/txt_moyennote"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/coach_coache_raduis_green"
+
+            android:textColor="#ffffff"
+            android:textSize="50dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="40dp"
+            android:layout_alignParentBottom="false"
+
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tres detendu"
+            android:id="@+id/txt_comment"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le 7 juin 2016"
+            android:id="@+id/txt_date"
+            android:layout_below="@+id/txt_comment"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:layout_marginTop="40dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EURO/UEFA"
+            android:id="@+id/txt_nom"
+            android:layout_below="@+id/txt_date"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton_avant"
+            android:src="@drawable/arrowup"
+            android:background="@drawable/whitecircle"
+            android:layout_below="@+id/txt_nom"
+            android:layout_marginLeft="100dp"
+
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_now"
+            android:layout_below="@+id/txt_nom"
+            android:layout_centerHorizontal="true"
+
+
+            android:src="@drawable/plus"
+            android:background="@drawable/whitecircle"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton_apres"
+            android:layout_alignTop="@+id/imageButton_now"
+
+            android:src="@drawable/arrowdown"
+            android:background="@drawable/whitecircle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp" />
+<!--Emotion-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emotion"
+            android:id="@+id/txt_emotion"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+        <!--domain0-->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Domain0"
+            android:id="@+id/txt_emotion_domain0"
+            android:layout_below="@+id/txt_emotion"
+            android:paddingLeft="10dp"
+
+            android:background="#51b95e"
+            android:textSize="23dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/txt_emotion_domain0_note"
+            android:layout_below="@+id/txt_emotion"
+
+            android:layout_marginLeft="290dp"
+            android:textColor="#ffffff"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:id="@+id/imageButton_emotion_domain0"
+            android:src="@drawable/angle_arrow_pointing_to_right_small"
+
+            android:layout_below="@+id/txt_emotion"
+            android:layout_marginTop="4dp"
+
+            android:layout_marginLeft="320dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_emotion_domain0"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout_emotion_domain0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur1"
+                android:id="@+id/txt_emotion_domain0_fac1"
+
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/txt_emotion_domain0_fac1_note"
+                android:layout_marginLeft="325dp"
+
+                android:background="@drawable/greennumbersmall"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur2"
+                android:id="@+id/txt_emotion_domain0_fac2"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_emotion_domain0_fac1"
+                android:layout_alignLeft="@+id/txt_emotion_domain0_fac1"
+                android:layout_alignStart="@+id/txt_emotion_domain0_fac1"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/txt_emotion_domain0_fac2_note"
+                android:layout_below="@+id/txt_emotion_domain0_fac1_note"
+
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="325dp"
+                android:background="@drawable/greennumbersmall"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur3"
+                android:id="@+id/txt_emotion_domain0_fac3"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_emotion_domain0_fac2"
+                android:layout_alignLeft="@+id/txt_emotion_domain0_fac2"
+                android:layout_alignStart="@+id/txt_emotion_domain0_fac2"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:id="@+id/txt_emotion_domain0_fac3_note"
+                android:layout_below="@+id/txt_emotion_domain0_fac2_note"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/greennumbersmall"
+                android:gravity="center_vertical|center_horizontal"
+                />
+        </RelativeLayout>
+
+        <!--domain1-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Domain1"
+            android:id="@+id/txt_emotion_domain1"
+            android:layout_below="@+id/relativeLayout_emotion_domain0"
+            android:paddingLeft="10dp"
+
+            android:background="#51b95e"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/txt_emotion_domain1_note"
+            android:layout_below="@+id/relativeLayout_emotion_domain0"
+
+            android:layout_marginLeft="290dp"
+            android:textColor="#ffffff"
+            android:textSize="23dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:id="@+id/imageButton_emotion_domain1"
+            android:src="@drawable/angle_arrow_pointing_to_right_small"
+
+            android:layout_below="@+id/relativeLayout_emotion_domain0"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="320dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_emotion_domain1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout_emotion_domain1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur1"
+                android:id="@+id/txt_emotion_domain1_fac1"
+
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/txt_emotion_domain1_fac1_note"
+                android:layout_marginLeft="325dp"
+
+                android:background="@drawable/greennumbersmall"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur2"
+                android:id="@+id/txt_emotion_domain1_fac2"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_emotion_domain1_fac1"
+                android:layout_alignLeft="@+id/txt_emotion_domain1_fac1"
+                android:layout_alignStart="@+id/txt_emotion_domain1_fac1"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/txt_emotion_domain1_fac2_note"
+                android:layout_below="@+id/txt_emotion_domain1_fac1"
+
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="325dp"
+                android:background="@drawable/greennumbersmall"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur3"
+                android:id="@+id/txt_emotion_domain1_fac3"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_emotion_domain1_fac2"
+                android:layout_alignLeft="@+id/txt_emotion_domain1_fac2"
+                android:layout_alignStart="@+id/txt_emotion_domain1_fac2"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:id="@+id/txt_emotion_domain1_fac3_note"
+                android:layout_below="@+id/txt_emotion_domain1_fac2"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/greennumbersmall"
+                android:gravity="center_vertical|center_horizontal"
+                />
+        </RelativeLayout>
+
+        <!--domain2-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Domain2"
+            android:id="@+id/txt_emotion_domain2"
+            android:layout_below="@+id/relativeLayout_emotion_domain1"
+            android:paddingLeft="10dp"
+
+            android:background="#51b95e"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/txt_emotion_domain2_note"
+            android:layout_below="@+id/relativeLayout_emotion_domain1"
+
+            android:layout_marginLeft="290dp"
+            android:textColor="#ffffff"
+            android:textSize="23dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:id="@+id/imageButton_emotion_domain2"
+            android:src="@drawable/angle_arrow_pointing_to_right_small"
+
+            android:layout_below="@+id/relativeLayout_emotion_domain1"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="320dp"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_emotion_domain2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout_emotion_domain2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur1"
+                android:id="@+id/txt_emotion_domain2_fac1"
+
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/txt_emotion_domain2_fac1_note"
+                android:layout_marginLeft="325dp"
+
+                android:background="@drawable/greennumbersmall"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur2"
+                android:id="@+id/txt_emotion_domain2_fac2"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_emotion_domain2_fac1"
+                android:layout_alignLeft="@+id/txt_emotion_domain2_fac1"
+                android:layout_alignStart="@+id/txt_emotion_domain2_fac1"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:id="@+id/txt_emotion_domain2_fac2_note"
+                android:layout_below="@+id/txt_emotion_domain2_fac1"
+
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="325dp"
+                android:background="@drawable/greennumbersmall"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur3"
+                android:id="@+id/txt_emotion_domain2_fac3"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_emotion_domain2_fac2"
+                android:layout_alignLeft="@+id/txt_emotion_domain2_fac2"
+                android:layout_alignStart="@+id/txt_emotion_domain2_fac2"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:id="@+id/txt_emotion_domain2_fac3_note"
+                android:layout_below="@+id/txt_emotion_domain2_fac2"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/greennumbersmall"
+                android:gravity="center_vertical|center_horizontal"
+                />
+        </RelativeLayout>
+
+        <!--Process-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Process"
+            android:id="@+id/txt_process"
+            android:layout_below="@+id/relativeLayout_emotion_domain2"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+
+            android:textSize="25dp"
+            android:textColor="#000000" />
+        <!--domain0-->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Domain0"
+            android:id="@+id/txt_process_domain0"
+            android:layout_below="@+id/txt_process"
+            android:paddingLeft="10dp"
+
+            android:background="#51b95e"
+            android:textSize="23dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/txt_process_domain0_note"
+            android:layout_below="@+id/txt_process"
+
+            android:layout_marginLeft="290dp"
+            android:textColor="#ffffff"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:id="@+id/imageButton_process_domain0"
+            android:src="@drawable/angle_arrow_pointing_to_right_small"
+
+            android:layout_below="@+id/txt_process"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="320dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_process_domain0"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout_process_domain0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur1"
+                android:id="@+id/txt_process_domain0_fac1"
+
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/txt_process_domain0_fac1_note"
+                android:layout_marginLeft="325dp"
+
+                android:background="@drawable/greennumbersmall"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur2"
+                android:id="@+id/txt_process_domain0_fac2"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_process_domain0_fac1"
+                android:layout_alignLeft="@+id/txt_process_domain0_fac1"
+                android:layout_alignStart="@+id/txt_process_domain0_fac1"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/txt_process_domain0_fac2_note"
+                android:layout_below="@+id/txt_process_domain0_fac1"
+
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="325dp"
+                android:background="@drawable/greennumbersmall"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur3"
+                android:id="@+id/txt_process_domain0_fac3"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_process_domain0_fac2"
+                android:layout_alignLeft="@+id/txt_process_domain0_fac2"
+                android:layout_alignStart="@+id/txt_process_domain0_fac2"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:id="@+id/txt_process_domain0_fac3_note"
+                android:layout_below="@+id/txt_process_domain0_fac2"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/greennumbersmall"
+                android:gravity="center_vertical|center_horizontal"
+                />
+        </RelativeLayout>
+
+        <!--domain1-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Domain1"
+            android:id="@+id/txt_process_domain1"
+            android:layout_below="@+id/relativeLayout_process_domain0"
+            android:paddingLeft="10dp"
+
+            android:background="#51b95e"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/txt_process_domain1_note"
+            android:layout_below="@+id/relativeLayout_process_domain0"
+
+            android:layout_marginLeft="290dp"
+            android:textColor="#ffffff"
+            android:textSize="23dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:id="@+id/imageButton_process_domain1"
+            android:src="@drawable/angle_arrow_pointing_to_right_small"
+
+            android:layout_below="@+id/relativeLayout_process_domain0"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="320dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_process_domain1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout_process_domain1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur1"
+                android:id="@+id/txt_process_domain1_fac1"
+
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/txt_process_domain1_fac1_note"
+                android:layout_marginLeft="325dp"
+
+                android:background="@drawable/greennumbersmall"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur2"
+                android:id="@+id/txt_process_domain1_fac2"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_process_domain1_fac1"
+                android:layout_alignLeft="@+id/txt_process_domain1_fac1"
+                android:layout_alignStart="@+id/txt_process_domain1_fac1"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/txt_process_domain1_fac2_note"
+                android:layout_below="@+id/txt_process_domain1_fac1"
+
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="325dp"
+                android:background="@drawable/greennumbersmall"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur3"
+                android:id="@+id/txt_process_domain1_fac3"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_process_domain1_fac2"
+                android:layout_alignLeft="@+id/txt_process_domain1_fac2"
+                android:layout_alignStart="@+id/txt_process_domain1_fac2"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:id="@+id/txt_process_domain1_fac3_note"
+                android:layout_below="@+id/txt_process_domain1_fac2"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/greennumbersmall"
+                android:gravity="center_vertical|center_horizontal"
+                />
+        </RelativeLayout>
+
+        <!--domain2-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Domain2"
+            android:id="@+id/txt_process_domain2"
+            android:layout_below="@+id/relativeLayout_process_domain1"
+            android:paddingLeft="10dp"
+
+            android:background="#51b95e"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:id="@+id/txt_process_domain2_note"
+            android:layout_below="@+id/relativeLayout_process_domain1"
+
+            android:layout_marginLeft="290dp"
+            android:textColor="#ffffff"
+            android:textSize="23dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:id="@+id/imageButton_process_domain2"
+            android:src="@drawable/angle_arrow_pointing_to_right_small"
+
+            android:layout_below="@+id/relativeLayout_process_domain1"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="320dp"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_process_domain2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout_process_domain2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur1"
+                android:id="@+id/txt_process_domain2_fac1"
+
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/txt_process_domain2_fac1_note"
+                android:layout_marginLeft="325dp"
+
+                android:background="@drawable/greennumbersmall"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur2"
+                android:id="@+id/txt_process_domain2_fac2"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_process_domain2_fac1"
+                android:layout_alignLeft="@+id/txt_process_domain2_fac1"
+                android:layout_alignStart="@+id/txt_process_domain2_fac1"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:id="@+id/txt_process_domain2_fac2_note"
+                android:layout_below="@+id/txt_process_domain2_fac1"
+
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="325dp"
+                android:background="@drawable/greennumbersmall"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facteur3"
+                android:id="@+id/txt_process_domain2_fac3"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_below="@+id/txt_process_domain2_fac2"
+                android:layout_alignLeft="@+id/txt_process_domain2_fac2"
+                android:layout_alignStart="@+id/txt_process_domain2_fac2"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:id="@+id/txt_process_domain2_fac3_note"
+                android:layout_below="@+id/txt_process_domain2_fac2"
+
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/greennumbersmall"
+                android:gravity="center_vertical|center_horizontal"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

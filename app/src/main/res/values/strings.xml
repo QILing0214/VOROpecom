@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="connecter">Se connecter</string>
+    <string name="title_activity_coach">Coach</string>
+    <string name="app_name">Opecom</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_utilisateur">Utilisateur</string>
+    <string name="url1">http://vor.tgd-info.net/web/app_dev.php</string>
+    <string name="url_vor">http://vor.tgd-info.net/web/app_dev.php</string>
+    <string name="url2">http://192.168.10.37</string>
+    <string name="url2_vor">http://192.168.10.37</string>
+
+</resources>

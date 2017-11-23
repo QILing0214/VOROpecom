@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="230dp">
+    <com.github.mikephil.charting.charts.LineChart
+    android:layout_width="350dp "
+    android:layout_height="230dp"
+    android:id="@+id/chart2"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"/>
+    </RelativeLayout>

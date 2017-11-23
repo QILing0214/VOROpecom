@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+
+        android:checkableBehavior="single"
+        >
+    <item android:title="Emotion"
+        android:id="@+id/nav_emotion_title">
+        <menu>
+            <item android:id="@+id/nav_emotion"
+                android:title="  Calculer mon VOR"
+                />
+            <item android:id="@+id/nav_historique"
+                android:title="  Historique" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="Paramètres"
+        android:id="@+id/nav_parametre_title">
+        <menu>
+
+            <item android:id="@+id/nav_profil"
+                android:title="  Mon Profil" />
+            <item android:id="@+id/nav_coach"
+                android:title="  Mon Coach" />
+        </menu>
+    </item>
+    </group>
+</menu>

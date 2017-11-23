@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/dialog_raduis">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:text="Profil mis à jour"
+        android:id="@+id/tv_title"
+        android:gravity="center"
+
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:text="Les informations de votre profil ont été mises à jour"
+        android:id="@+id/tv_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:padding="20dp"/>
+    <View style="@style/Divider"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="OK"
+        android:id="@+id/tv_ok"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+
+        android:textColor="#0a7eb6"
+        android:textSize="25dp" />
+</LinearLayout>
